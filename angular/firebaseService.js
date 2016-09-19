@@ -7,4 +7,8 @@ angular.module('cv')
     return $firebaseArray(new Firebase(firebaseUrl + 'goats'));
   };
 
+  this.getCart = function() {
+    return $firebaseArray(new Firebase(firebaseUrl + 'cart'));
+  };
+
 })
