@@ -19,18 +19,11 @@ https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 	    </tr>
 	  </thead>
 	  <tbody>
-	    <tr>
-	      <td>Totes McGoats</td>
+	    <tr ng-repeat="item in goats">
+	      <td>{{item.name}}</td>
 	      <td>2</td>
 	      <td>Female</td>
-	      <td>$100</td>
-	      <td>Add</td>
-	    </tr>
-	    <tr>
-	      <td>Totes McGoats 2</td>
-	      <td>2</td>
-	      <td>Female</td>
-	      <td>$100</td>
+	      <td>{{item.price}}</td>
 	      <td>Add</td>
 	    </tr>
 	  </tbody>
@@ -51,7 +44,6 @@ https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <!-- Angular App -->
     <script type="text/javascript" src="angular/app.js"></script>
     <script type="text/javascript" src="angular/mainCtrl.js"></script>
-    <script type="text/javascript" src="angular/mainService.js"></script>
     <script type="text/javascript" src="angular/firebaseService.js"></script>
 
 </body>

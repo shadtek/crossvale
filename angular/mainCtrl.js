@@ -1,9 +1,7 @@
 angular.module('cv')
 
-.controller('mainController', function ($scope, dataService, firebaseService) {
+.controller('mainController', function ($scope, firebaseService) {
 	$scope.controllerTest = "controller test";
-	
-	$scope.serviceTest = dataService.testService();
 
 	$scope.goats = firebaseService.getGoats();
 
